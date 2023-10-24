@@ -1,0 +1,13 @@
+
+-------------- Branches --------------------------------
+
+We need branches to avoid conflicts in every commit, also Not to mess up the main branch
+Example of a Solar company:
+    A company wants to develop a Solar system.
+Requirement:
+    Develop a Solar system basic operational model and deploy it.
+
+One person is assigned: We need to get approach:
+    1. Write the code
+    2. Test it and commit it in the local repo
+    3. Push the code to GitHub
