@@ -12,7 +12,7 @@ public class Main {
        FeatureSun featureSun = new FeatureSun();
 
        featureSun.temperature="2342345";
-       featureSun.radius=234234;
+       featureSun.radius="234234"; // Now error is fixed
        featureSun.color="Yellow";
 
 

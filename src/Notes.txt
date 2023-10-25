@@ -34,6 +34,12 @@ Now in order to solve this error , user doesn't want to mess up the other featur
 So, what should the user do in order to preserve what is working fine and then work in issue.
 Solution:
     Create a separate branch and resolve the issue in that branch.
+    - Make sure, you are in the right branch by typing ( git branch )
+    - Then type git add . and git commit -m "Write that you see an error in the code"
+
+When you fixed the issue in the branch you separately created, what is next?
+
+    - 
 
 
 
@@ -50,4 +56,3 @@ Solution:
 
 
 
-    
