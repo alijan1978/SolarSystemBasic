@@ -39,7 +39,107 @@ Solution:
 
 When you fixed the issue in the branch you separately created, what is next?
 
-    - 
+In order to merge after you have fixed it:
+    - Switch to the branch you want to merge into
+    - use the command, git merge yourBranchName --> this yourBranchName is the name of branch you want to merge
+----------------------------------------------------------------------------------------------------
+
+                                    Revision up to this point:
+
+You have a project, SolarSystem that has the basic setup.
+YOu want to work on it and want to add a feature sun.
+Write down the steps in details.
+
+1. Clone --> git clone URL
+2. Open the terminal in the location of the repository --> confirm the location (by deault your terminal is always on folder)
+3. Create a new branch --> git branch yourBranchName
+4. git checkout yourBranchName --> you are switched to the that desired branch
+
+Make the changes in the Intellij , by adding the code and testing it.
+Once the project is tested and you are sure that it is working completely fine.
+You can make multiple commits while working on this branch.
+
+Once the feature is complete and is tested by you, and you want to merge it to the Parent branch.
+
+5. First go to Parent branch --> git checkout ParentBranch
+6. Merge the childBranch into Parent --> git merge childBranch
+
+Important Notes:
+    Whenever you want to switch a branch, make sure to do the following:
+    1. Before switching branch, make sure what is your current branch --> git branch ( the one with * is the Current Branch)
+    2. Before creating a branch, make sure you are on the branch from which you want to create --> git branch
+    3. Before merging, make sure that  you are on the Parent Branch --> git branch
+
+    4. Whenever you are switching the branch, make sure there is no change that is NOT committed on that branch
+        otherwise you will get Warning message: You need to commit the change or stash it ... sometimes might loose the change
+        So we MUST always commit the changes before switching the branch to main.
+
+Important:
+    Whenever you are in a branch --> GiT works the exact same way it used to work before.
+----------------------------------------------------------------------------------------------------------
+
+Pull Request on GitHub
+
+    Whenever you work on a branch that needs to be integrated to the main...
+    Usually the code is first reviewed by your Team Lead and then he/she might ask you to either:
+        - Merge it on the Local Repo
+          OR
+        - Merge it on the Remote Repo
+
+    On Local Repo, you merge by this approach:
+
+    1. First go to Parent branch --> git checkout ParentBranch
+    2. Merge the childBranch into Parent --> git merge childBranch
+
+   On Remote Repo:
+    1. Open up a Pull Request, to let your Team Lead know that you have updated the code.
+    2. Click on Pull Request
+    3. Click New Pull Request
+    4. Select the base (the branch to which you want to merge)
+    5. Select the Compare (the branch which you want to merge)
+    6. Click on Create Pull Request
+    7. You can Add comments, Add assignees, Add reviewers, add label ...
+    8. Finally, Click on Pull Request
+
+How to resolve a Pull Request ?
+    Must be ONLY done by the Team Lead
+
+In order to Sync your branch with GitHub:
+    1. Make sure you are in the branch you want to update
+    2. git fetch --> to check if there is any update
+    3. git pull -- > to download the update on Main Branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
