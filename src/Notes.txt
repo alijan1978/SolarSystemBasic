@@ -11,3 +11,48 @@ One person is assigned: We need to get approach:
     1. Write the code
     2. Test it and commit it in the local repo
     3. Push the code to GitHub
+
+-----------------------------------------------------------------
+
+Check if your branch is up-to-date with the GitHub or not.
+    git fetch --> checks if there is any update on the GitHub in any branch
+    If there is any update, it will tell you the branch name in which there is an update
+    If there is No update, it will simply output nothing/empty.
+Important:
+    git fetch doesn't pull/updates the code  -- > it just checks
+    In order to pull the update --> git pull
+
+**** git branch -- > tells us our current branch
+
+git branch yourBranchName --> to create a new branch
+git checkout yourBranchName --> to switch to the yourBranchName
+
+-------------------------------------------------------
+
+While working on FeatureSun , the user has an error in the code.
+Now in order to solve this error , user doesn't want to mess up the other features that are working fine.
+So, what should the user do in order to preserve what is working fine and then work in issue.
+Solution:
+    Create a separate branch and resolve the issue in that branch.
+    - Make sure, you are in the right branch by typing ( git branch )
+    - Then type git add . and git commit -m "Write that you see an error in the code"
+
+When you fixed the issue in the branch you separately created, what is next?
+
+    - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
